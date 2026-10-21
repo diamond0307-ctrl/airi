@@ -775,20 +775,31 @@
       h1 { font-size: clamp(44px, 13vw, 64px); }
       .hero-lead { margin-top: 18px; font-size: 16px; }
       .primary-button { width: 100%; }
-      .hero-visual { min-height: 570px; margin-top: 16px; }
-      .portrait-blob { width: 330px; bottom: 0; }
-      .portrait { width: 360px; max-height: 440px; }
+      .hero-visual { min-height: 400px; margin-top: 12px; }
+      .portrait-blob {
+        right: -36px;
+        bottom: 0;
+        width: 285px;
+        transform: rotate(2deg);
+      }
+      .portrait {
+        right: -65px;
+        bottom: 0;
+        width: 360px;
+        max-height: 400px;
+        transform: none;
+      }
       .speech {
-        top: 0;
-        left: 50%;
-        width: 205px;
+        top: 32px;
+        left: 0;
+        width: 170px;
         padding: 15px 15px 14px;
-        font-size: 18px;
-        transform: translateX(-50%) rotate(-3deg);
+        font-size: 17px;
+        transform: rotate(-3deg);
       }
       .speech small { font-size: 10px; }
       .sparkle { width: 42px; font-size: 18px; }
-      .sparkle.one { right: 0; top: 28%; }
+      .sparkle.one { right: 0; top: 9%; }
       .sparkle.two { left: 2%; bottom: 13%; }
       .section { width: min(100% - 32px, 1080px); padding: 72px 0; }
       .intro-graphic { min-height: 310px; }
@@ -804,6 +815,11 @@
       .result-cta { padding: 20px 16px; }
       .final-cta { width: calc(100% - 32px); padding: 42px 22px; border-radius: 30px; box-shadow: 8px 10px 0 var(--ink); }
       .final-cta h2 { font-size: 30px; }
+    }
+
+    @media (min-width: 451px) and (max-width: 600px) {
+      .portrait-blob { right: -8px; }
+      .portrait { right: -20px; }
     }
 
     @media (prefers-reduced-motion: reduce) {
